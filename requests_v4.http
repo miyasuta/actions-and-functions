@@ -14,8 +14,6 @@ GET http://localhost:4004/catalog/Books(1)/CatalogService.boundFunctionWithParam
 ###Bound Function without params
 GET http://localhost:4004/catalog/Books(1)/CatalogService.boundFunctionWithoutParam()
 
-
-
 ###unbound Action with params
 POST http://localhost:4004/catalog/unboundActionWithParam
 Content-Type: application/json

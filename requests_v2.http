@@ -43,8 +43,6 @@ Content-Type: application/json
     "param2": "b"
 }
 
-
-
 ###unound Action without params
 POST http://localhost:4004/v2/catalog/unboundActionWithoutParam
 Content-Type: application/json
