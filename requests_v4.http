@@ -1,0 +1,39 @@
+###Bound Action with params
+POST http://localhost:4004/catalog/Books(1)/CatalogService.boundActionWithParam
+Content-Type: application/json
+
+{ "param1": "a", "param2": "b" }
+
+###Bound Action without params
+POST http://localhost:4004/catalog/Books(1)/CatalogService.boundActionWithoutParam
+Content-Type: application/json
+
+###Bound Function with params
+GET http://localhost:4004/catalog/Books(1)/CatalogService.boundFunctionWithParam(param1='a',param2='b')
+
+###Bound Function without params
+GET http://localhost:4004/catalog/Books(1)/CatalogService.boundFunctionWithoutParam()
+
+
+
+###unbound Action with params
+POST http://localhost:4004/catalog/unboundActionWithParam
+Content-Type: application/json
+
+{
+    "param1": "a",
+    "param2": "b"
+}
+
+###unound Action without params
+POST http://localhost:4004/catalog/unboundActionWithoutParam
+Content-Type: application/json
+
+###Unbound Function withparams
+GET http://localhost:4004/catalog/unboundFunctionWithParam(param1='a',param2='b')
+
+###Unbound Function without params
+GET http://localhost:4004/catalog/unboundFunctionWithoutParam()
+
+
+
