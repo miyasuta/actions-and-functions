@@ -3,7 +3,8 @@ POST http://localhost:4004/v2/catalog/Books(1)/CatalogService.boundActionWithPar
 Content-Type: application/json
 
 {
-    "param": "test"
+    "param1": "a",
+    "param2": "b"
 }
 
 ###Bound Action with params:OK pattern2
@@ -11,7 +12,8 @@ POST http://localhost:4004/v2/catalog/Books_boundActionWithParam?ID=1
 Content-Type: application/json
 
 {
-    "param": "test"
+    "param1": "a",
+    "param2": "b"
 }
 
 ###Bound Action without params:OK pattern1
@@ -22,11 +24,8 @@ Content-Type: application/json
 POST http://localhost:4004/v2/catalog/Books_boundActionWithoutParam?ID=1
 Content-Type: application/json
 
-###Bound Function with params: -> NG
-GET http://localhost:4004/v2/catalog/Books(1)/CatalogService.boundFunctionWithParam?param='test'
-
 ###Bound Function with params: OK pattern2
-GET http://localhost:4004/v2/catalog/Books_boundFunctionWithParam?ID=1&param='test'
+GET http://localhost:4004/v2/catalog/Books_boundFunctionWithParam?ID=1&param1='a'&param2='b'
 
 ###Bound Function without params
 GET http://localhost:4004/v2/catalog/Books_boundFunctionWithoutParam?ID=1
@@ -40,7 +39,8 @@ POST http://localhost:4004/v2/catalog/unboundActionWithParam
 Content-Type: application/json
 
 {
-    "param": "test"
+    "param1": "a",
+    "param2": "b"
 }
 
 
@@ -49,16 +49,11 @@ Content-Type: application/json
 POST http://localhost:4004/v2/catalog/unboundActionWithoutParam
 Content-Type: application/json
 
-###Unbound Function withparams:OK pattern1
-GET http://localhost:4004/v2/catalog/unboundFunctionWithParam()?param='test'
 
-###Unbound Function withparams:OK pattern2
-GET http://localhost:4004/v2/catalog/unboundFunctionWithParam?param='test'
+###Unbound Function withparams:OK
+GET http://localhost:4004/v2/catalog/unboundFunctionWithParam?param1='a'&param2='b'
 
-###Unbound Function without params:OK pattern1
-GET http://localhost:4004/v2/catalog/unboundFunctionWithoutParam()
-
-###Unbound Function without params:OK pattern2
+###Unbound Function without params:OK
 GET http://localhost:4004/v2/catalog/unboundFunctionWithoutParam
 
 
