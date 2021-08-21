@@ -1,4 +1,4 @@
-###Bound Action with params:OK pattern1
+###Bound Action with params: pattern1
 POST http://localhost:4004/v2/catalog/Books(1)/CatalogService.boundActionWithParam
 Content-Type: application/json
 
@@ -7,7 +7,7 @@ Content-Type: application/json
     "param2": "b"
 }
 
-###Bound Action with params:OK pattern2
+###Bound Action with params: pattern2
 POST http://localhost:4004/v2/catalog/Books_boundActionWithParam?ID=1
 Content-Type: application/json
 
@@ -16,25 +16,25 @@ Content-Type: application/json
     "param2": "b"
 }
 
-###Bound Action without params:OK pattern1
+###Bound Action without params: pattern1
 POST http://localhost:4004/v2/catalog/Books(1)/CatalogService.boundActionWithoutParam
 Content-Type: application/json
 
-###Bound Action without params:OK pattern2
+###Bound Action without params: pattern2
 POST http://localhost:4004/v2/catalog/Books_boundActionWithoutParam?ID=1
 Content-Type: application/json
 
-###Bound Function with params: OK pattern2
+###Bound Function with params
 GET http://localhost:4004/v2/catalog/Books_boundFunctionWithParam?ID=1&param1='a'&param2='b'
 
 ###Bound Function without params
 GET http://localhost:4004/v2/catalog/Books_boundFunctionWithoutParam?ID=1
 
-###Bound Function without params: OK pattern2
+###Bound Function without params
 GET http://localhost:4004/v2/catalog/Books_boundFunctionWithoutParam?ID=1
 
 
-###unbound Action with params:OK pattern1
+###unbound Action with params
 POST http://localhost:4004/v2/catalog/unboundActionWithParam
 Content-Type: application/json
 
@@ -45,15 +45,15 @@ Content-Type: application/json
 
 
 
-###unound Action without params:OK
+###unound Action without params
 POST http://localhost:4004/v2/catalog/unboundActionWithoutParam
 Content-Type: application/json
 
 
-###Unbound Function withparams:OK
+###Unbound Function withparams
 GET http://localhost:4004/v2/catalog/unboundFunctionWithParam?param1='a'&param2='b'
 
-###Unbound Function without params:OK
+###Unbound Function without params
 GET http://localhost:4004/v2/catalog/unboundFunctionWithoutParam
 
 
